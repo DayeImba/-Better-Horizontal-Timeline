@@ -25,10 +25,10 @@ A simple and customizable horizontal timeline component written in vanilla JavaS
 Simply copy Timeline.js into your project:    
 只需将 Timeline.js 文件复制到你的项目中：
 
-html
+```html
 <script src="path/to/Timeline.js"></script>
 <link rel="stylesheet" href="timeline.css">
-
+```
 ---
 
 ## Usage / 使用方法
@@ -36,15 +36,15 @@ html
 Prepare a container:  
 准备一个容器：
 
-html
+```html
 <div id="timelineContainer"></div>
-
+```
 
 ### 2. JavaScript
 Initialize the timeline:  
 初始化时间轴：
 
-html
+```html
 const timelineData = [
   {
     time: '2025-04-25 10:00',
@@ -61,12 +61,12 @@ const timelineData = [
 ];
 
 const timeline = new Timeline('timelineContainer', timelineData, true);
-
+```
 ---
 ## Timeline Data Format / 时间轴数据格式
 Each event object should follow this structure:  
 每个事件对象应遵循以下结构：
-html
+```html
 {
   time: 'YYYY-MM-DD HH:mm',      // event time / 事件时间
   contents: [                    // array of HTML strings / HTML 内容数组
@@ -75,6 +75,7 @@ html
     // ...
   ]
 }
+```
 ![Project Banner](./image.png)
 
 ---
